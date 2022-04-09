@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tycho.core.client.controllers.SettingsController">
+   <children>
+      <Button fx:id="cancelBtn" layoutX="256.0" layoutY="410.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="saveBtn" layoutX="322.0" layoutY="410.0" mnemonicParsing="false" text="Save" />
+      <Label fx:id="tmdbApiLbl" layoutX="71.0" layoutY="9.0" text="TMdb API:" />
+      <TextField fx:id="tmdbApi" layoutX="139.0" layoutY="5.0" prefHeight="24.0" prefWidth="233.0" />
+      <Label fx:id="jsonDbLbl" layoutX="85.0" layoutY="36.0" text="JsonDB:" />
+      <TextField fx:id="jsonDb" layoutX="139.0" layoutY="32.0" prefHeight="24.0" prefWidth="233.0" />
+      <TextField fx:id="ffmpegPath" layoutX="139.0" layoutY="59.0" prefHeight="24.0" prefWidth="233.0" />
+      <Label fx:id="ffmpegPathLbl" layoutX="48.0" layoutY="62.0" text="Ffmpeg Path:" />
+      <Label fx:id="fpcalcPathLbl" layoutX="55.0" layoutY="90.0" text="Fpcalc Path:" />
+      <TextField fx:id="fpcalcPath" layoutX="139.0" layoutY="86.0" prefHeight="24.0" prefWidth="233.0" />
+      <Label fx:id="pythonPathWinLbl" layoutX="23.0" layoutY="117.0" text="Python Path Win:" />
+      <TextField fx:id="pythonPathWin" layoutX="139.0" layoutY="113.0" prefHeight="24.0" prefWidth="233.0" />
+      <TextField fx:id="pythonPathLin" layoutX="139.0" layoutY="140.0" prefHeight="24.0" prefWidth="233.0" />
+      <Label fx:id="pythonPathLinLbl" layoutX="29.0" layoutY="143.0" text="Python Path Lin:" />
+      <Label fx:id="themesLbl" layoutX="86.0" layoutY="198.0" text="Theme:" />
+      <Label fx:id="epRenameExprLbl" layoutX="23.0" layoutY="225.0" text="Ep Rename Expr:" />
+      <TextField fx:id="epRenameExpr" layoutX="139.0" layoutY="221.0" prefHeight="24.0" prefWidth="233.0" />
+      <Label fx:id="lowSimThresholdLbl" layoutX="20.0" layoutY="251.0" text="Low Sim. Thresh.:" />
+      <Label fx:id="lowSimColorLbl" layoutX="35.0" layoutY="279.0" text="Low Sim. Color:" />
+      <Label fx:id="darkenSelColorLbl" layoutX="19.0" layoutY="306.0" text="Darken Sel. Color:" />
+      <Label fx:id="selectedRowColorLbl" layoutX="6.0" layoutY="332.0" text="Selected Row Color:" />
+      <ComboBox fx:id="themes" layoutX="139.0" layoutY="194.0" prefHeight="24.0" prefWidth="233.0" />
+      <Slider fx:id="lowSimThreshold" layoutX="139.0" layoutY="252.0" prefWidth="233.0" />
+      <Slider fx:id="darkenSelColor" layoutX="139.0" layoutY="307.0" prefWidth="233.0" />
+      <Button fx:id="resetBtn" layoutX="198.0" layoutY="410.0" mnemonicParsing="false" text="Reset" />
+      <TextField fx:id="audioComparePath" layoutX="139.0" layoutY="167.0" prefHeight="24.0" prefWidth="233.0" />
+      <Label fx:id="audioComparePathLbl" layoutX="14.0" layoutY="170.0" text="Audio Comp. Path:" />
+      <ColorPicker fx:id="lowSimColor" layoutX="139.0" layoutY="276.0" prefWidth="233.0" />
+      <ColorPicker fx:id="selectedRowColor" layoutX="139.0" layoutY="330.0" prefWidth="233.0" />
+      <Label fx:id="loaderBackgroundColorLbl" layoutX="9.0" layoutY="361.0" text="Loader Back. Color:" />
+      <Label fx:id="loaderOpacityLbl" layoutX="32.0" layoutY="387.0" text="Loader Opacity:" />
+      <Slider fx:id="loaderOpacity" layoutX="139.0" layoutY="388.0" prefWidth="233.0" />
+      <ColorPicker fx:id="loaderBackgroundColor" layoutX="139.0" layoutY="357.0" prefWidth="233.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tycho.core.client.controllers.BrowserController">
+   <children>
+      <TreeView fx:id="treeView" layoutX="14.0" layoutY="16.0" prefHeight="371.0" prefWidth="390.0" />
+      <Button fx:id="searchBtn" layoutX="445.0" layoutY="360.0" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="199.0" text="Search" />
+      <ImageView fx:id="posterImgView" fitHeight="340.5" fitWidth="227.0" layoutX="416.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane fx:id="loadPane" prefHeight="422.0" prefWidth="657.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle fx:id="background" fill="#454545" height="422.0" opacity="0.65" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="657.0" />
+            <Rectangle fx:id="mainLoadRect" fill="#2f2f2f" height="127.0" layoutY="148.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="657.0" />
+            <Label fx:id="loadLbl" layoutX="38.0" layoutY="185.0" prefHeight="53.0" prefWidth="619.0" text="Loading..." textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="loadBtn" layoutX="514.0" layoutY="334.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="129.0" text="Ok" visible="false" />
+         </children>
+      </Pane>
+      <Button fx:id="tmdbIdBtn" layoutX="416.0" layoutY="360.0" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" />
+   </children>
+</AnchorPane>
