@@ -17,7 +17,7 @@ I made this program to keep me busy and to actually make something that I can us
 
 ## Upload a video file to the DB
 First we need to have a DB, so we add some video files to it.  
-This program is meant to be used with a centralized DB, or a DB which will be imported and export among other people (aka share the DB with people).  
+This program is meant to be used with a centralized DB, or a DB which will be imported and exported among other people (aka share the DB with people).  
 First select the tv show/serie, then drag and drop the video files, then click on "Try to auto match" (The program will try to extract the season and episode from the filename with regex), finally click on upload.
 <video src="https://user-images.githubusercontent.com/73956677/162569865-acfb79c9-033c-4887-aa68-e43b73e68574.mp4"></video>  
 ## Match the fingerprints and rename the files
@@ -35,7 +35,7 @@ Every setting has a tooltip that shows more information about the setting.
 ![settings](https://user-images.githubusercontent.com/73956677/162572766-c7e4ab8c-ea4b-4240-ab91-3329cf1a0965.png)
 
 ## Notes
-I mainly use Java because my main OS is Linux and not Windows. Java allows me to make desktop applications with SceneBuilder (JavaFX) for Windows and Linux. I would try .NET Core, but it currently doesn't support GUI on Linux. Simple it's the best language for my situation.  
+I mainly use Java because my main OS is Linux and not Windows. Java allows me to make desktop applications with SceneBuilder (JavaFX) for Windows and Linux. I would try .NET Core, but it currently doesn't support GUI on Linux. Simply it's the best language for my situation.  
   
 The DB of this program is not a proper database, it's just folders and json files. I plan on changing this (to MongoDB probably) when I'm not the only one using it (if it ever comes to that).
 
