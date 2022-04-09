@@ -53,7 +53,7 @@ Every setting has a tooltip that shows more information about the setting.
 ## Notes
 I mainly use Java because my main OS is Linux and not Windows. Java allows me to make desktop applications with SceneBuilder (JavaFX) for Windows and Linux. I would try .NET Core, but it currently doesn't support GUI on Linux. Simply it's the best language for my situation.  
   
-The DB of this program is not a proper database, it's just folders and json files. I plan on changing this (to MongoDB probably) when I'm not the only one using it (if it ever comes to that).
+The DB of this program is not a proper database, it's just folders and json files. I plan on changing this (to MongoDB) when I'm not the only one using it (if it ever comes to that).
 
 Please know that the program is far from perfect and that not everything is programmed how I wanted it to be. I will have to change this later on and fix it.
 
