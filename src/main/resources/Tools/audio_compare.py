@@ -9,8 +9,9 @@ According to https://oxygene.sk/2011/01/how-does-chromaprint-work/
 
 
 """
-This python file has been copied from somewhere, I forgot where. 
-I edited it to my needs, so not everything is the same
+I did note make this python file, I forgot where I found it.
+I had to edit it to be able to use the file for my needs.
+At some point I have to recreate this in Java
 """
 import argparse
 import json
