@@ -11,6 +11,7 @@ I made this program to keep me busy and to actually make something that I can us
 - [ ] Make it so only the last 5 minutes will be transcoded to .wav file for fingerprinting (last 5 minutes is more accurate than the first 5)
 - [ ] Rework Config/Settings
 - [ ] Create a CacheManager so scraping for images and info will get cached and go faster
+- [ ] Create the audio_compare in Java
 - [ ] Fix small bugs
 - [ ] Improve exception handling were needed
 - [ ] Make a proper database interface etc...
