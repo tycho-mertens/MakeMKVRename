@@ -45,7 +45,7 @@ Every setting has a tooltip that shows more information about the setting.
 3. Open IntelliJ and clone the project
 4. Add the needed JavaFX Libraries
 5. Run the program, it will give an error about JavaFX modules missing
-6. Add the VM Options (--module-path /home/user/Documents/javafx-sdk-17.0.2/lib --add-modules=javafx.controls,javafx.fxml,javafx.media)
+6. Add the VM Options <sub><sup>(--module-path /home/user/Documents/javafx-sdk-17.0.2/lib --add-modules=javafx.controls,javafx.fxml,javafx.media)</sub></sup>
 7. Now you can run the program
 
 <video src="https://user-images.githubusercontent.com/73956677/162590936-cc16f0ac-8d24-4cf6-b5b3-78e79eaea6dc.mp4"></video>
