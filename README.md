@@ -35,7 +35,7 @@ In this case the file "randomVideoFile.mp4" has no results in the current databa
 <video src="https://user-images.githubusercontent.com/73956677/162572637-87cae79d-ce0b-4803-8c79-95274f2322a8.mp4"></video>
 
 ## Settings
-How the settings/config currently works needs to be reworked. Everything selected in red will be removed, because I made a module that will automatically install the needed components to run this program.  
+How the settings/config currently works needs to be reworked. Everything selected in red will be removed, because I'm working on a module that will automatically install the needed components to run this program.  
 Every setting has a tooltip that shows more information about the setting.
 ![settings](https://user-images.githubusercontent.com/73956677/162572766-c7e4ab8c-ea4b-4240-ab91-3329cf1a0965.png)
 
