@@ -101,7 +101,7 @@ def similarity_score(fp1: List[int], fp2: List[int]) -> float:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('file', nargs=2, help="files to compair")
+    parser.add_argument('file', nargs=2, help="files to compare")
 
     args = parser.parse_args()
 
