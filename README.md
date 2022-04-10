@@ -40,19 +40,22 @@ Every setting has a tooltip that shows more information about the setting.
 ![settings](https://user-images.githubusercontent.com/73956677/162572766-c7e4ab8c-ea4b-4240-ab91-3329cf1a0965.png)
 
 ## How to run this on IntelliJ (Linux)
-1. Download JavaFX (17.0.2) from: [openjfx-17.0.2_linux-aarch64_bin.sdk.zip](https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-aarch64_bin-sdk.zip)
-2. Extract the JavaFX to your Documents folder
+1. Install required tools
+   - Download JavaFX (17.0.2) from: [openjfx-17.0.2_linux-aarch64_bin.sdk.zip](https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-aarch64_bin-sdk.zip)
+   - Download FFmpeg: [ffmpeg-release-amd64-static.tar.xz](https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz) <sub><sup>(or use a package manager)</sub></sup>
+   - Download FpCalc: [chromaprint-fpcalc-1.5.1-linux-x86_64.tar.gz](https://github.com/acoustid/chromaprint/releases/download/v1.5.1/chromaprint-fpcalc-1.5.1-linux-x86_64.tar.gz)
+2. Extract the tools to a folder (Documents folder or something)
 3. Open IntelliJ and clone the project
 4. Add the needed JavaFX Libraries
 5. Run the program, it will give an error about JavaFX modules missing
 6. Add the VM Options <sub><sup>(--module-path /home/user/Documents/javafx-sdk-17.0.2/lib --add-modules=javafx.controls,javafx.fxml,javafx.media)</sub></sup>
-7. Now you can run the program
+7. Now you can run the program <sub><sup>(Don't forget to change the location of the tools in the settings)</sub></sup>
 
 <video src="https://user-images.githubusercontent.com/73956677/162590936-cc16f0ac-8d24-4cf6-b5b3-78e79eaea6dc.mp4"></video>
 
 ## Notes
-I mainly use Java because my main OS is Linux and not Windows. Java allows me to make desktop applications with SceneBuilder (JavaFX) for Windows and Linux. I would try .NET Core, but it currently doesn't support GUI on Linux. Simply it's the best language for my situation.  
-  
+I mainly use Java because my main OS is Linux and not Windows. Java allows me to make desktop applications with SceneBuilder (JavaFX) for Windows and Linux. I would try .NET Core, but it currently doesn't support GUI on Linux. Simply it's the best language for my situation.
+
 The DB of this program is not a proper database, it's just folders and json files. I plan on changing this (to MongoDB) when I'm not the only one using it (if it ever comes to that).
 
 Please know that the program is far from perfect and that not everything is programmed how I wanted it to be. I will have to change this later on and fix it.
