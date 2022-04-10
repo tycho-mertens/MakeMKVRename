@@ -18,7 +18,7 @@ public class Main extends Application {
         //Install necessary tools to run this program
         Installer.startup();
 
-        //Creating stage and scene from method293
+        //Creating stage and scene from method
         new SceneBuilder("main.fxml")
                 .setCloseAllOnExit(true)
                 .addImage("icon.png")

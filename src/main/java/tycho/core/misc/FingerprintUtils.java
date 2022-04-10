@@ -27,8 +27,7 @@ public class FingerprintUtils {
         File transcodedWav = fM.createTempFile("encoded", ".wav");
 
         try {
-//            FFmpeg ffmpeg = new FFmpeg(FileManager.getInstance().getFfMpegExecutable());
-            FFmpeg ffmpeg = new FFmpeg("/usr/bin/ffmpeg");//TODO properly fix this
+            FFmpeg ffmpeg = new FFmpeg(FileManager.getInstance().getFfMpegExecutable());
             FFmpegBuilder builder = new FFmpegBuilder()
                     .setInput(videoFile.getAbsolutePath())
                     .overrideOutputFiles(true)

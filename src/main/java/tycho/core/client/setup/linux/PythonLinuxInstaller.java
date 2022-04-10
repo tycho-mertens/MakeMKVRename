@@ -9,12 +9,17 @@ public class PythonLinuxInstaller extends Installer {
 
     @Override
     protected String url() {
-        return FileManager.getInstance().getExternalResourceFile("Tools/linux/python_linux.zip");
+        return FileManager.getInstance().getExternalResourceFile("Tools/linux/python.tar.xz");
+    }
+
+    @Override
+    protected String fileName() {
+        return "python";
     }
 
     @Override
     public void setup() {
-        unzip(new File(url()), FileManager.getInstance().getExecutablesDir());
+        unzipLinux(new File(url()), FileManager.getInstance().getExecutablesDir(), "tar", "xz");
     }
 
     @Override

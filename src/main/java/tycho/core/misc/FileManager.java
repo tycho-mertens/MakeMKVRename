@@ -45,7 +45,7 @@ public class FileManager {
      * @return Returns the path to the compare script in the resources folder
      */
     public String getAudioComparePath(){
-        return getExternalResourceFile(config.asString(Config.AUDIO_COMPARE_PATH));
+        return new File(getExecutablesDir(), "audio_compare.py").getAbsolutePath();
     }
 
     /**
@@ -54,9 +54,7 @@ public class FileManager {
      * @return Returns the path to the python executable in the resources folder
      */
     public String getPythonExecutable(){
-        return getExternalResourceFile(isWindows?
-                config.asString(Config.PYTHON_PATH_WINDOWS)
-                : config.asString(Config.PYTHON_PATH_LINUX));
+        return new File(getExecutablesDir(), "python/bin/python3.8").getAbsolutePath();
 
     }
 
@@ -66,7 +64,7 @@ public class FileManager {
      * @return Returns the path to the fpcalc executable in the resources folder
      */
     public String getFpCalcExecutable(){
-        return getExternalResourceFile(config.asString(Config.FPCALC_PATH));
+        return new File(getExecutablesDir(), "fpcalc").getAbsolutePath();
     }
 
     /**
@@ -75,7 +73,7 @@ public class FileManager {
      * @return Returns the path to the ffmpeg executable in the resources folder
      */
     public String getFfMpegExecutable(){
-        return getExternalResourceFile(config.asString(Config.FFMPEG_PATH));
+        return new File(getExecutablesDir(), "ffmpeg").getAbsolutePath();
     }
 
     /**
