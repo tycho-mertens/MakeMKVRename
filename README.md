@@ -9,7 +9,7 @@ I made this program to keep me busy and to actually make something that I can us
 - [ ] Automatically install needed tools to run this program (Currently working on this)
 - [ ] Fix some issues that prevent it from fully working on Windows
 - [ ] Improve fingerprint matching status
-- [ ] Make it so only the last 5 minutes will be transcoded to .wav file for fingerprinting (last 5 minutes is more accurate than the first 5)
+- [ ] Make it so only the last 5 minutes will be transcoded to .wav file for fingerprinting <sub><sup>(last 5 minutes is more accurate than the first 5)</sub></sup>
 - [ ] Rework Config/Settings
 - [ ] Create a CacheManager so scraping for images and info will get cached and go faster
 - [ ] Port some Python code to Java
