@@ -13,7 +13,7 @@ Here is a simplified diagram on how the program works.
 - [ ] Rework Config
 - [ ] Cache management
 ## How to use the program (Linux)
-1. First we need to search for the TV Show you're trying to rename, click on the database icon
+1. Click on the database icon to open the "Find TV Show" window
    ![mainSelectTvSearch](https://user-images.githubusercontent.com/73956677/162643454-1febf839-2df0-4544-a2f6-5ea8922d49f2.png)
 2. Enter the name of the TV Show and click on "Search"  
    ![searchForSuits](https://user-images.githubusercontent.com/73956677/162643555-6d7905a0-787a-43d7-9635-4c5280a5581f.png)
