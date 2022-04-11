@@ -11,7 +11,7 @@ When watching for the first time, the episode names will need to be matched manu
 
 ## How can the program be used
 - With community:  
-The program is meant to be used with a community. This community would then create the first fingerprint, if there is none, and upload it to the centralized databse. If someone else now wants to match the same TV Show, they won't need to match it mannualy, since the fingerprint is already in the database.
+The program is meant to be used with a community. This community would then create the first fingerprint, if there is none, and upload it to the centralized database. If someone else now wants to match the same TV Show, they won't need to match it mannualy, since the fingerprint is already in the database.
 
 - Without community <sup><sub>(This is how I use it)</sup></sub>  :  
 The program can also be used without a community. For example: I want to watch the TV Show "Suits", I copy it to my pc. I would need to match it manually for the first time and add it to the database. A year later I want to watch "Suits" again, but I don't have it on my pc anymore. I can simply copy the episodes to my pc and automatically match with the help of the program.
