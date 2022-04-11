@@ -67,7 +67,7 @@ red)</sup></sub> and click on "Rename"
    <img src="https://user-images.githubusercontent.com/73956677/162703243-273ef760-c0fd-4c2d-a76d-6494a6e206d8.png" width="500em"/>  
 5. Drag and drop the video files you want to upload to the database  
    <img src="https://user-images.githubusercontent.com/73956677/162703519-c7cb3f41-9774-4869-906e-8e580d754ebf.png" width="500em"/>  
-6. Click on "Try and auto match", this way to program can extract the season and episode with regex <sup><sub>(Watch the light blue circles in the pictures for the auto matching with regex)</sup></sub>  
+6. Click on "Try and auto match", this way the program can extract the season and episode with regex <sup><sub>(Watch the light blue circles in the pictures for the auto matching with regex)</sup></sub>  
    <img src="https://user-images.githubusercontent.com/73956677/162703725-f9933f4c-4500-4ffd-80ff-508d69da3f93.png" width="500em"/>  
 7. Now click on "Upload" <sup><sub>(This will take a while)</sup></sub>  
    <img src="https://user-images.githubusercontent.com/73956677/162709640-2518d2e1-cab5-40e0-8e36-1839276fbcc4.png" width="500em"/>  
@@ -80,4 +80,4 @@ I mainly use Java because my main OS is Linux and not Windows. Java allows me to
 The DB of this program is not a proper database, it's just folders and json files. I plan on changing this (to MongoDB) when I'm not the only one using it (if it ever comes to that).
 
 
-If you still don't understand something or need more explanation, feel free to contact me.
+In case of any questions feel free to contact me.
