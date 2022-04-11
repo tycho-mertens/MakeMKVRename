@@ -7,11 +7,33 @@ I calculate the  fingerprints with [Chromaprint](https://github.com/acoustid/chr
 
 Here is a simplified diagram on how the program works.  
 ![diagram](https://user-images.githubusercontent.com/73956677/162639107-d2110ecc-5cc3-43d6-a6f2-0d0da2c84d77.png)
+When watching for the first time, the episode names will need to be matched manually and added to the database. When the episodes are re-watched later on, you don't have to go through manually matching them again.
+
+## How can the program be used
+- With community:  
+The program is meant to be used with a community. This community would then create the first fingerprint, if there is none, and upload it to the centralized databse. If someone else now wants to match the same TV Show, they won't need to match it mannualy, since the fingerprint is already in the database.
+
+- Without community <sup><sub>(This is how I use it)</sup></sub>  :  
+The program can also be used without a community. For example: I want to watch the TV Show "Suits", I copy it to my pc. I would need to match it manually for the first time and add it to the database. A year later I want to watch "Suits" again, but I don't have it on my pc anymore. I can simply copy the episodes to my pc and automatically match with the help of the program.
+
 ## TODO
 - [x] Automatically install needed tools to run the program
 - [ ] Windows support
 - [ ] Rework Config
 - [ ] Cache management
+
+## How to run this on IntelliJ (Linux)
+1. Install required tools
+   - Download JavaFX (17.0.2) from: [openjfx-17.0.2_linux-aarch64_bin.sdk.zip](https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-aarch64_bin-sdk.zip)
+2. Extract the tools to a folder (Documents folder for example)
+3. Open IntelliJ and clone the project
+4. Add the needed JavaFX Libraries
+5. Run the program, it will give an error about JavaFX modules missing
+6. Add the VM Options <sub><sup>(--module-path /home/user/Documents/javafx-sdk-17.0.2/lib --add-modules=javafx.controls,javafx.fxml,javafx.media)</sub></sup>
+7. Now you can run the program 
+
+<video src="https://user-images.githubusercontent.com/73956677/162590936-cc16f0ac-8d24-4cf6-b5b3-78e79eaea6dc.mp4"></video>
+
 ## How to use the program (Linux)
 1. Click on the database icon to open the "Find TV Show" window
    ![mainSelectTvSearch](https://user-images.githubusercontent.com/73956677/162643454-1febf839-2df0-4544-a2f6-5ea8922d49f2.png)
@@ -47,18 +69,6 @@ Here is a simplified diagram on how the program works.
 ![uploadDB](https://user-images.githubusercontent.com/73956677/162709640-2518d2e1-cab5-40e0-8e36-1839276fbcc4.png)
 8. After you get a popup that says "All Done!" (just click on "OK"), the video files will have been inserted into the database as audio fingerprints and you can close the "Uploader"
 ![end](https://user-images.githubusercontent.com/73956677/162710554-c4613870-8828-404d-bc82-58f71d88e955.png)
-
-## How to run this on IntelliJ (Linux)
-1. Install required tools
-   - Download JavaFX (17.0.2) from: [openjfx-17.0.2_linux-aarch64_bin.sdk.zip](https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-aarch64_bin-sdk.zip)
-2. Extract the tools to a folder (Documents folder for example)
-3. Open IntelliJ and clone the project
-4. Add the needed JavaFX Libraries
-5. Run the program, it will give an error about JavaFX modules missing
-6. Add the VM Options <sub><sup>(--module-path /home/user/Documents/javafx-sdk-17.0.2/lib --add-modules=javafx.controls,javafx.fxml,javafx.media)</sub></sup>
-7. Now you can run the program 
-
-<video src="https://user-images.githubusercontent.com/73956677/162590936-cc16f0ac-8d24-4cf6-b5b3-78e79eaea6dc.mp4"></video>
 
 ## Notes
 I mainly use Java because my main OS is Linux and not Windows. Java allows me to create desktop applications with SceneBuilder (JavaFX) for Windows and Linux. I would try .NET Core, but it currently doesn't support GUI on Linux. Simply it's the best language for my situation.
