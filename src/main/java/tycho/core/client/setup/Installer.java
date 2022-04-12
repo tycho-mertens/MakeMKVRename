@@ -1,5 +1,6 @@
 package tycho.core.client.setup;
 
+import org.apache.commons.io.FileUtils;
 import org.rauschig.jarchivelib.Archiver;
 import org.rauschig.jarchivelib.ArchiverFactory;
 import tycho.core.client.setup.linux.AudioCompareLinuxInstaller;
@@ -9,18 +10,15 @@ import tycho.core.client.setup.linux.PythonLinuxInstaller;
 import tycho.core.misc.FileManager;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.logging.Logger;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 public abstract class Installer {
 
@@ -39,9 +37,29 @@ public abstract class Installer {
     protected abstract String fileName();
 
     /**
+     * @return Returns the type of compression for the downloaded file
+     */
+    protected String getCompression(){
+        return "xz";
+    }
+
+    /**
      * Extracts the files from the zip file (if needed) and moves them to the correct place
      */
-    public abstract void setup();
+    public void setup(){
+        try {
+            File tar = new File(FileManager.getInstance().createTempDirectory(), "compressed.tar.xz");
+            FileUtils.copyURLToFile(stringToURL(url()), tar);
+            unzipLinux(tar, tar.getParentFile(), "tar", getCompression());
+            copy(Arrays.stream(
+                            Objects.requireNonNull(
+                                    tar.getParentFile().listFiles(File::isDirectory)
+                            )).toList().get(0).getAbsolutePath() + File.separator + fileName()
+                    , fileName());
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 
     /**
      * @return returns whether the files have been extracted and moved or not
@@ -50,31 +68,31 @@ public abstract class Installer {
        return new File(FileManager.getInstance().getExecutablesDir(), fileName()).exists();
     }
 
-    /**
-     * Unzip compressed files
-     * @param zip The zip file to extract from
-     * @param destDir Where to put the files we extract
-     */
-    protected void unzip(File zip, File destDir){
-        try (ZipInputStream zis = new ZipInputStream(new FileInputStream(zip))) {
-            ZipEntry zipEntry = zis.getNextEntry();
-
-            while(zipEntry != null){
-                Path newPath = destDir.toPath().resolve(zipEntry.getName());
-                if(zipEntry.getName().endsWith(File.separator)){
-                    Files.createDirectories(newPath);
-                }else{
-                    if(newPath.getParent() != null && Files.notExists(newPath.getParent()))
-                        Files.createDirectories(newPath.getParent());
-                    Files.copy(zis, newPath, StandardCopyOption.REPLACE_EXISTING);
-                }
-                zipEntry = zis.getNextEntry();
-            }
-            zis.closeEntry();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    /**
+//     * Unzip compressed files
+//     * @param zip The zip file to extract from
+//     * @param destDir Where to put the files we extract
+//     */
+//    protected void unzip(File zip, File destDir){
+//        try (ZipInputStream zis = new ZipInputStream(new FileInputStream(zip))) {
+//            ZipEntry zipEntry = zis.getNextEntry();
+//
+//            while(zipEntry != null){
+//                Path newPath = destDir.toPath().resolve(zipEntry.getName());
+//                if(zipEntry.getName().endsWith(File.separator)){
+//                    Files.createDirectories(newPath);
+//                }else{
+//                    if(newPath.getParent() != null && Files.notExists(newPath.getParent()))
+//                        Files.createDirectories(newPath.getParent());
+//                    Files.copy(zis, newPath, StandardCopyOption.REPLACE_EXISTING);
+//                }
+//                zipEntry = zis.getNextEntry();
+//            }
+//            zis.closeEntry();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 
     /**
