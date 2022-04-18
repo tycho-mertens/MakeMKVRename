@@ -25,7 +25,7 @@ The program can also be used without a community. For example: I want to watch t
 
 ## How to run this on IntelliJ (Linux)
 1. Install needed tools
-   - Download JavaFX (17.0.2) from: [openjfx-17.0.2_linux-aarch64_bin.sdk.zip](https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-aarch64_bin-sdk.zip)
+   - Download JavaFX (17.0.2) from: [openjfx-17.0.2_linux-x64_bin-sdk.zip](https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-x64_bin-sdk.zip)
 2. Extract the tools to a folder (Documents folder for example)
 3. Open IntelliJ and clone the project
 4. Add the needed JavaFX Libraries
