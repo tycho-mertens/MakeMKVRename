@@ -34,10 +34,6 @@ The program can also be used without a community. For example: I want to watch t
 8. Add the VM Options <sub><sup>(--module-path /home/user/Documents/javafx-sdk-17.0.2/lib --add-modules=javafx.controls,javafx.fxml)</sub></sup>
 9. Now you can run the program 
 
-<sub><sup>In case the video doesn't play: <a href="https://user-images.githubusercontent.com/73956677/162759677-9fe50154-3629-4733-91d8-54f2ed5a67d1.mp4">Link to video</a></sup></sub>
-<video src="https://user-images.githubusercontent.com/73956677/162759677-9fe50154-3629-4733-91d8-54f2ed5a67d1.mp4"></video>
-<!-- <video src="https://user-images.githubusercontent.com/73956677/162590936-cc16f0ac-8d24-4cf6-b5b3-78e79eaea6dc.mp4"></video> -->
-
 ## How to use the program (Linux)
 1. Click on the database search icon to open the "Find TV Show" window  
    <img src="https://user-images.githubusercontent.com/73956677/162643454-1febf839-2df0-4544-a2f6-5ea8922d49f2.png" width="500em"/>  
