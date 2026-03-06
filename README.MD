@@ -5,7 +5,7 @@ To fix this, I wrote this program. It takes the video files with random names an
 from there it matches the fingerprint to the database and renames them to the correct episode.  
 I calculate the  fingerprints with [Chromaprint](https://github.com/acoustid/chromaprint).
 
-Here is a simplified diagram on how the program works.  
+Here is a simplified diagram on how the pipeline works.  
 <img src="https://user-images.githubusercontent.com/73956677/162639107-d2110ecc-5cc3-43d6-a6f2-0d0da2c84d77.png" width="500em"/>  
 When watching for the first time, the episode names will need to be matched manually and added to the database. When the episodes are re-watched later on, you don't have to go through manually matching them again.
 
